@@ -2,9 +2,8 @@ const router = require("express").Router();
 const characterController = require("../../controllers/characterControllers.js");
 
 // Matches with "/api/character"
-router.route("/")
-  .get(characterController.findAll)
-  .post(characterController.create);
+// router.route("/")
+  // for authentication 
 
 // Matches with "/api/character/:id"
 router
