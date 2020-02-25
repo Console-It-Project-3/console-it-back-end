@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const enemiesController = require("../../controllers/enimiesController.js");
+const enemiesController = require("../../controllers/enimies");
 
 // Matches with "/api/enemies"
 // router.route("/")
@@ -8,6 +8,7 @@ const enemiesController = require("../../controllers/enimiesController.js");
 // Matches with "/api/enemies/:id"
 router
   .route("/:id")
+  .get(enemiesController.findAll)
   .get(enemiesController.findById)
   .put(enemiesController.update)
 
