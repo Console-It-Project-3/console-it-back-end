@@ -1,16 +1,13 @@
 const router = require("express").Router();
-const storyController = require("../../controllers/storyControllers.js");
+const storyController = require("../../controllers/story.js");
 
 // Matches with "/api/story"
-router.route("/")
-  .get(storyController.findAll)
-  .post(storyController.create);
+// router.route("/")
+ 
 
 // Matches with "/api/story/:id"
 router
   .route("/:id")
   .get(storyController.findById)
-  .put(storyController.update)
-  .delete(storyController.remove);
 
 module.exports = router;
