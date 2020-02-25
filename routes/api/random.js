@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const randomController = require("../../controllers/randomControllers.js");
+const randomController = require("../../controllers/random");
 
 // Matches with "/api/random"
 router.route("/")

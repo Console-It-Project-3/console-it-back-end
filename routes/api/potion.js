@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const potionController = require("../../controllers/potionControllers.js");
+const potionController = require("../../controllers/potion");
 
 // Matches with "/api/potion"
 router.route("/")
