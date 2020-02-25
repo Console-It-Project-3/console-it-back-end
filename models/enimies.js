@@ -29,7 +29,7 @@ const enimiesSchema = new Schema({
    
 });
   
-const Enimies = mongoose.model("Enimies", enimiesSchema);
+const Enemies = mongoose.model("Enemies", enimiesSchema);
 
 
-module.exports = Enimies;
+module.exports = Enemies;
