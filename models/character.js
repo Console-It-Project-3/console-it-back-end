@@ -1,19 +1,27 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const characterSchema = new mongoose.Schema({
+
+const charactersSchema = new mongoose.Schema({
+  user: {
+    type: Schema.Types.ObjectId, 
+    ref: 'User'
+  },
+  equipment: {
+    type: Schema.Types.ObjectId, 
+    ref: 'equipment'
+  },
+
   name: {
     type: String,
     required: true,
     unique: true
   },
-
   class: {
     type: String,
     default: "",
     required: true
   },
-
   attack: {
     type: Number,
     default: ""
