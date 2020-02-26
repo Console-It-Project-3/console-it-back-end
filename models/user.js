@@ -7,6 +7,7 @@ var validateEmail = function(email) {
 };
 
 const userSchema = new Schema({
+    _id: Schema.Types.ObjectId,
     username: {
         type: String, 
         required: 'Username is required' 
@@ -41,10 +42,10 @@ const userSchema = new Schema({
         type: Number, 
         required: 'Phone number is required' 
     },
-    characters: [{ 
+    characters: [{
         type: Schema.Types.ObjectId, 
         ref: 'Character'
-    }], // association to another model
+    }],
     highscore: { 
         type: Number, 
         required: true 
