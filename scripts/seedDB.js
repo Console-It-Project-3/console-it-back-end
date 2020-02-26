@@ -295,27 +295,27 @@ const PresetStory = [
     action: "to be added"
   },
   {
-    name: "story",
+    name: "story1",
     action: "to be added"
   },
   {
-    name: "story",
+    name: "story2",
     action: "to be added"
   },
   {
-    name: "story",
+    name: "story3",
     action: "to be added"
   },
   {
-    name: "story",
+    name: "story4",
     action: "to be added"
   },
   {
-    name: "story",
+    name: "story5",
     action: "to be added"
   },
   {
-    name: "story",
+    name: "story6",
     action: "to be added"
   }
 ];
