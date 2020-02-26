@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const RandomEventSchema = new mongoose.Schema({
+const RandomEventSchema = new Schema({
   name: {
     type: String,
     required: true
