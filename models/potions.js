@@ -2,11 +2,14 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const potionSchema = new mongoose.Schema({
+  character: {
+    type: Schema.Types.ObjectId, 
+    ref: 'Character'
+  },
   name: {
     type: String,
     required: true,
   },
-
   attack: {
     type: Number,
     default: ""
@@ -15,17 +18,14 @@ const potionSchema = new mongoose.Schema({
     type: Number,
     default: ""
   },
-
   hp: {
     type: Number,
     default: ""
   },
-
   magic: {
     type: Number,
     default: ""
   }
-
 });
 
 const Potion = mongoose.model("Potion", potionSchema);
