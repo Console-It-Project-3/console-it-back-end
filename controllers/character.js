@@ -7,6 +7,24 @@ module.exports={
           .then(dbModel => res.json(dbModel))
           .catch(err => res.status(422).json(err));
       },
+      getCharacterWithEquipmet: function(characterName){
+        return Character.findOne({ characterName: characterName })
+        .populate('equipment').exec((err, equipment) => {
+        console.log("Populated Character " + equipment);
+        })
+      },
+      getCharacterWithFood: function(characterName){
+        return Character.findOne({ characterName: characterName })
+        .populate('food').exec((err, food) => {
+        console.log("Populated Character " + food);
+        })
+      },
+      getCharacterWithPotions: function(characterName){
+        return Character.findOne({ characterName: characterName })
+        .populate('potions').exec((err, potions) => {
+        console.log("Populated Character " + potions);
+        })
+      },
       findById: function(req, res) {
         db.Character
           .findById(req.params.id)
