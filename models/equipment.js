@@ -27,7 +27,7 @@ const equipmentSchema = new mongoose.Schema({
     default: ""
   },
 
-  hp: {
+  health: {
     type: Number,
     default: ""
   },
