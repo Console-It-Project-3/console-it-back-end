@@ -18,7 +18,7 @@ const potionSchema = new mongoose.Schema({
     type: Number,
     default: ""
   },
-  hp: {
+  health: {
     type: Number,
     default: ""
   },
