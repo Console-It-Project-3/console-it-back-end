@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const enimiesSchema = new Schema({
+const enemiesSchema = new Schema({
     name: { 
         type: String, 
         required: true 
@@ -29,7 +29,7 @@ const enimiesSchema = new Schema({
    
 });
   
-const Enemies = mongoose.model("Enemies", enimiesSchema);
+const Enemies = mongoose.model("Enemies", enemiesSchema);
 
 
 module.exports = Enemies;
