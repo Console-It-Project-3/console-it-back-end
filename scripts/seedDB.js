@@ -4,7 +4,7 @@ const db = require("../models");
 // This file empties the collection and inserts the things below
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/reactcharacters"
+  process.env.MONGODB_URI || "mongodb://localhost/game"
 );
 
 const PresetCharacters = [
@@ -255,37 +255,37 @@ const PresetRandom = [
   {
     name: "Traveling Priest",
     action: "heal",
-    value:1
+    value: 1
   },
   {
     name: "Random Enemy",
     action: "fight",
-    value:0
+    value: 0
   },
   {
     name: "Merchant",
     action: "Sell or Buy",
-    value:1
+    value: 1
   },
   {
     name: "Merchant",
     action: "Sell or Buy",
-    value:0
+    value: 0
   },
   {
     name: "Commoner",
     action: "Ask for food",
-    value:0
+    value: 0
   },
   {
     name: "commoner",
     action: "give item",
-    value:1
+    value: 1
   },
   {
     name: "Thief",
     action: "steal",
-    value:0
+    value: 0
   }
 ];
 
@@ -320,77 +320,84 @@ const PresetStory = [
   }
 ];
 
-db.Characters.remove({})
-  .then(() => db.Characters.collection.insertMany(PresetCharacters))
+db.Character
+  .remove({})
+  .then(() => db.Character.collection.insertMany(PresetCharacters))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
     process.exit(1);
   });
 
-db.Characters.remove({})
-  .then(() => db.Characters.collection.insertMany(PresetEnemies))
+db.Enemies
+  .remove({})
+  .then(() => db.Enemies.collection.insertMany(PresetEnemies))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
     process.exit(1);
   });
 
-db.Characters.remove({})
-  .then(() => db.Characters.collection.insertMany(PresetEquipment))
+db.Equipment
+  .remove({})
+  .then(() => db.Equipment.collection.insertMany(PresetEquipment))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
     process.exit(1);
   });
 
-db.Characters.remove({})
-  .then(() => db.Characters.collection.insertMany(PresetFood))
+db.Food
+  .remove({})
+  .then(() => db.Food.collection.insertMany(PresetFood))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
     process.exit(1);
   });
 
-db.Characters.remove({})
-  .then(() => db.Characters.collection.insertMany(PresetPotion))
+db.Potion
+  .remove({})
+  .then(() => db.Potion.collection.insertMany(PresetPotion))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
     process.exit(1);
   });
 
-  db.Characters.remove({})
-  .then(() => db.Characters.collection.insertMany(PresetRandom))
+db.RandomEvents
+  .remove({})
+  .then(() => db.RandomEvents.collection.insertMany(PresetRandom))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
     process.exit(1);
   });
 
-  db.Characters.remove({})
-  .then(() => db.Characters.collection.insertMany(PresetStory))
+db.Story
+  .remove({})
+  .then(() => db.Story.collection.insertMany(PresetStory))
   .then(data => {
     console.log(data.result.n + " records inserted!");
-    process.exit(0);
+    // process.exit(0);
   })
   .catch(err => {
     console.error(err);
