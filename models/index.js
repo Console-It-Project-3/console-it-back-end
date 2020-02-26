@@ -6,5 +6,5 @@ module.exports = {
   Story: require("./storyEvents"),
   Food: require("./food"),
   Potion: require("./potions"),
-  Enemies: require("./enimies")
+  Enemies: require("./enemies")
 };
