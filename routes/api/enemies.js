@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const enemiesController = require("../../controllers/enimies");
+const enemiesController = require("../../controllers/enemies");
 
 // Matches with "/api/enemies"
 // router.route("/")
