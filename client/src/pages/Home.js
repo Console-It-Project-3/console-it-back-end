@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import "../pages/Home.css"
-import API from "../utils/api"
+
+import "../pages/Home.css";
+import API from "../utils/api";
+
 
 class Home extends Component {
 

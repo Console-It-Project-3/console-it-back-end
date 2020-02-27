@@ -12,8 +12,16 @@ router
   .get(characterController.findById)
   .post(characterController.create)
   .put(characterController.update)
+
+  // .delete(characterController.remove);
+
+
+  router
+  .route("/all")
+
 // .delete(characterController.remove);
 // router
 //   .route("/all")
 //   .get(characterController.findAll)
+
 module.exports = router;
