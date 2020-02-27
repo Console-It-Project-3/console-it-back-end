@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../pages/Home.css"
 import API from "../utils/api"
-import axios from "axios"
+
 
 class Home extends Component {
 
@@ -10,11 +10,10 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        axios.get("http://localhost:3001/api/character/5e56b2224a7c1f3e5004287b").then(data => {
+        API.getCharacters("5e56b2224a7c1f3e5004287b").then(data => {
             console.log("hit api", data);
             this.setState({ data: data })
         })
-
     }
 
     render() {
