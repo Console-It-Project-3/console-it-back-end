@@ -17,9 +17,33 @@ class Home extends Component {
     // need to mount all of the story
     // need to mount the random events
     componentDidMount() {
-        API.getCharacters("5e56b2224a7c1f3e5004287b").then(data => {
-            console.log("hit api", data);
-            this.setState({ data: data })
+        API.getCharacters({}).then(data => {
+            console.log("hit api", data.data);
+            this.setState({ data: data.data })
+        })
+        API.getEnemies({}).then(data => {
+            console.log("hit api", data.data);
+            this.setState({ data: data.data })
+        })
+        API.getEquipment({}).then(data => {
+            console.log("hit api", data.data);
+            this.setState({ data: data.data })
+        })
+        API.getFood({}).then(data => {
+            console.log("hit api", data.data);
+            this.setState({ data: data.data })
+        })
+        API.getPotion({}).then(data => {
+            console.log("hit api", data.data);
+            this.setState({ data: data.data })
+        })
+        API.getRandom({}).then(data => {
+            console.log("hit api", data.data);
+            this.setState({ data: data.data })
+        })
+        API.getStory({}).then(data => {
+            console.log("hit api", data.data);
+            this.setState({ data: data.data })
         })
     }
 

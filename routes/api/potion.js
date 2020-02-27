@@ -10,7 +10,7 @@ router
   .route("/:id")
   .get(potionController.findById)
   .put(potionController.update)
-  .delete(potionController.remove)
+  // .delete(potionController.remove)
   
 
 module.exports = router;

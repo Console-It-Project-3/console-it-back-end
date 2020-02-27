@@ -10,6 +10,6 @@ router
   .route("/:id")
   .get(storyController.findById)
   .put(storyController.update)
-  .delete(storyController.remove);
+  // .delete(storyController.remove);
 
 module.exports = router;

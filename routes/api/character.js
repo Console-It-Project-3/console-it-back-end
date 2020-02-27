@@ -12,6 +12,6 @@ router
   .get(characterController.findById)
   .post(characterController.create)
   .put(characterController.update)
-  .delete(characterController.remove);
+  // .delete(characterController.remove);
 
 module.exports = router;
