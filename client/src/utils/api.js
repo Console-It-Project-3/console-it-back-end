@@ -14,19 +14,7 @@ export default {
         console.log("api")
         return axios.get("http://localhost:3001/api/character/all");
     },
-    getEnemies: function () {
-        console.log("api")
-        return axios.get("http://localhost:3001/api/enemies/all");
-    },
-    getEquipment:
 
-    getFood:
-
-    getPotion:
-
-    getRandom:
-
-    getStory:
     // Gets the post with the given id
     //   getPost: function(id) {
     //     return axios.get("/api/posts/" + id);
