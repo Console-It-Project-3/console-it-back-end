@@ -3,14 +3,16 @@ const enemiesController = require("../../controllers/enemies");
 
 // Matches with "/api/enemies"
 // router.route("/")
-  
+
 
 // Matches with "/api/enemies/:id"
 router
-  .route("/:id")
-  // .get(enemiesController.findAll)
+  .route("/all")
+  .get(enemiesController.findAll)
   .get(enemiesController.findById)
   .put(enemiesController.update)
-  // .delete(enemiesController.remove)
-
+// .delete(enemiesController.remove)
+// router
+//   .route("/all")
+//   .get(enemiesController.findAll)
 module.exports = router;

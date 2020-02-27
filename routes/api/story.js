@@ -7,9 +7,14 @@ const storyController = require("../../controllers/story");
 
 // Matches with "/api/story/:id"
 router
-  .route("/:id")
+  .route("/all")
+  .get(storyController.findAll)
   .get(storyController.findById)
   .put(storyController.update)
   // .delete(storyController.remove);
 
+
+  // router
+  // .route("/all")
+  // .get(storyController.findAll)
 module.exports = router;

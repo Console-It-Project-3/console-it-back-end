@@ -11,7 +11,7 @@ const equipmentSchema = new mongoose.Schema({
     required: true,
   },
   class: {
-    type: String,
+    type: [String],
     default: "",
     required: true
   },
