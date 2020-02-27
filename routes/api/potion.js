@@ -3,14 +3,17 @@ const potionController = require("../../controllers/potion");
 
 // Matches with "/api/potion"
 // router.route("/")
-  
+
 
 // Matches with "/api/potion/:id"
 router
-  .route("/:id")
+  .route("/all")
+  .get(potionController.findAll)
   .get(potionController.findById)
   .put(potionController.update)
-  // .delete(potionController.remove)
-  
+// .delete(potionController.remove)
+// router
+//   .route("/all")
+//   .get(potionController.findAll)
 
 module.exports = router;

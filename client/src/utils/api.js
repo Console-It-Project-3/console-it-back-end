@@ -11,43 +11,43 @@ import axios from "axios";
 export default {
     // Gets all posts
     getCharacters: function () {
-        console.log("api")
+        // console.log("api")
         return axios.get("http://localhost:3001/api/character/all");
     },
 
-    getEnemies: function (id) {
-        console.log("api", id)
-        return axios.get("http://localhost:3001/api/enemies/" + id);
+    getEnemies: function () {
+        // console.log("api")
+        return axios.get("http://localhost:3001/api/enemies/all");
     },
-    getEquipment: function (id) {
-        console.log("api", id)
-        return axios.get("http://localhost:3001/api/equipment/" + id);
+    getEquipment: function () {
+        // console.log("api")
+        return axios.get("http://localhost:3001/api/equipment/all");
     },
-    getFood: function (id) {
-        console.log("api", id)
-        return axios.get("http://localhost:3001/api/food/" + id);
+    getFood: function () {
+        // console.log("api")
+        return axios.get("http://localhost:3001/api/food/all");
     },
-    getPotion: function (id) {
-        console.log("api", id)
-        return axios.get("http://localhost:3001/api/potion/" + id);
+    getPotion: function () {
+        // console.log("api")
+        return axios.get("http://localhost:3001/api/potion/all");
     },
-    getRandom: function (id) {
-        console.log("api", id)
-        return axios.get("http://localhost:3001/api/random/" + id);
+    getRandom: function () {
+        // console.log("api")
+        return axios.get("http://localhost:3001/api/random/all");
     },
-    getStory: function (id) {
-        console.log("api", id)
-        return axios.get("http://localhost:3001/api/story/" + id);
+    getStory: function () {
+        // console.log("api")
+        return axios.get("http://localhost:3001/api/story/all");
     },
 
 
-    // Gets the post with the given id
-    //   getPost: function(id) {
-    //     return axios.get("/api/posts/" + id);
+    // Gets the post with the given 
+    //   getPost: function() {
+    //     return axios.get("/api/posts/" + );
     //   },
-    //   // Deletes the post with the given id
-    //   deletePost: function(id) {
-    //     return axios.delete("/api/posts/" + id);
+    //   // Deletes the post with the given 
+    //   deletePost: function() {
+    //     return axios.delete("/api/posts/" + );
     //   },
     //   // Saves a post to the database
     //   savePost: function(postData) {
