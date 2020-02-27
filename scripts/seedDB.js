@@ -106,6 +106,78 @@ const PresetEnemies = [
     defence: 5,
     health: 30,
     magic: 50
+  },
+  {
+    name: "Wolf pack",
+    class: "monster",
+    attack: 30,
+    defence: 10,
+    health: 50,
+    magic: 0
+  },
+  {
+    name: "Bandits",
+    class: "Warrior",
+    attack: 10,
+    defence: 10,
+    health: 30,
+    magic: 0
+  },
+  {
+    name: "Spider",
+    class: "Monster",
+    attack: 5,
+    defence: 5,
+    health: 20,
+    magic: 5
+  },
+  {
+    name: "Rougue Knight",
+    class: "Knight",
+    attack: 100,
+    defence: 50,
+    health: 60,
+    magic: 40
+  },
+  {
+    name: "Slime",
+    class: "Monster",
+    attack: 1,
+    defence: 1,
+    health: 10,
+    magic: 0
+  },
+  {
+    name: "Ent",
+    class: "Monster",
+    attack: 3,
+    defence: 3,
+    health: 30,
+    magic: 3
+  },
+  {
+    name: "Orcs",
+    class: "Monster",
+    attack: 15,
+    defence: 30,
+    health: 50,
+    magic: 0
+  },
+  {
+    name: "Trolls",
+    class: "Monster",
+    attack: 15,
+    defence: 15,
+    health: 40,
+    magic: 0
+  },
+  {
+    name: "Undead",
+    class: "Warrior",
+    attack: 20,
+    defence: 20,
+    health: 30,
+    magic: 0
   }
 ];
 
@@ -113,14 +185,70 @@ const PresetEquipment = [
   {
     name: "Fancy Hat",
     Equip: "Head",
+    class: ["warrior", "Mage", "Archer", "Berserker", "Cleric", "Tank"],
     attack: 2,
     defence: 2,
     health: 5,
     magic: 2
   },
   {
+    name: "Hero's Hood",
+    Equip: "Head",
+    class: ["warrior", "Mage", "Archer", "Berserker", "Cleric", "Tank"],
+    attack: 30,
+    defence: 30,
+    health: 30,
+    magic: 30
+  },
+  {
+    name: "Death Cap",
+    Equip: "Body",
+    class: ["Mage", "Cleric"],
+    attack: -2,
+    defence: -5,
+    health: -20,
+    magic: 30
+  },
+  {
+    name: "Iron Helmet",
+    Equip: "Head",
+    class: ["warrior", "Berserker", "Tank"],
+    attack: 5,
+    defence: 5,
+    health: 10,
+    magic: 0
+  },
+  {
+    name: "Steel Helmet",
+    Equip: "Head",
+    class: ["warrior", "Berserker", "Tank"],
+    attack: 10,
+    defence: 10,
+    health: 15,
+    magic: 0
+  },
+  {
+    name: "Gold Helmet",
+    Equip: "Head",
+    class: ["warrior","Berserker", "Tank"],
+    attack: 15,
+    defence: 15,
+    health: 20,
+    magic: 0
+  },
+  {
+    name: "Diamond Helmet",
+    Equip: "Head",
+    class: ["warrior","Berserker", "Tank"],
+    attack: 25,
+    defence: 25,
+    health: 30,
+    magic: 0
+  },
+  {
     name: "ChainMail",
     Equip: "Body",
+    class: ["warrior", "Archer", "Berserker", "Tank"],
     attack: 5,
     defence: 20,
     health: 20,
@@ -129,50 +257,290 @@ const PresetEquipment = [
   {
     name: "Mystic Body",
     Equip: "Body",
+    class: ["Mage", "Cleric"],
     attack: -2,
     defence: 5,
     health: 20,
     magic: 15
   },
   {
-    name: "Legs",
+    name: "Leather Pants",
     Equip: "Legs",
+    class: "Archer",
     attack: 0,
     defence: 5,
     health: 20,
     magic: 0
   },
   {
+    name: "Leather body",
+    Equip: "body",
+    class: "Archer",
+    attack: 0,
+    defence: 10,
+    health: 20,
+    magic: 0
+  },
+  {
+    name: "Leather coif",
+    Equip: "head",
+    class: "Archer",
+    attack: 5,
+    defence: 3,
+    health: 10,
+    magic: 0
+  },
+  {
+    name: "Archer's Pants",
+    Equip: "Legs",
+    class: "Archer",
+    attack: 15,
+    defence: 15,
+    health: 30,
+    magic: 0
+  },
+  {
+    name: "Archer's body",
+    Equip: "body",
+    class: "Archer",
+    attack: 15,
+    defence: 15,
+    health: 35,
+    magic: 0
+  },
+  {
+    name: "Archer's coif",
+    Equip: "head",
+    class: "Archer",
+    attack: 15,
+    defence: 15,
+    health: 15,
+    magic: 0
+  },
+  {
+    name: "Ancient Pants",
+    Equip: "Legs",
+    class: "Archer",
+    attack: 50,
+    defence: 25,
+    health: 25,
+    magic: 0
+  },
+  {
+    name: "Ancient body",
+    Equip: "body",
+    class: "Archer",
+    attack: 50,
+    defence: 25,
+    health: 25,
+    magic: 0
+  },
+  {
+    name: "Ancient coif",
+    Equip: "head",
+    class: "Archer",
+    attack: 50,
+    defence: 25,
+    health: 25,
+    magic: 0
+  },
+  {
     name: "Staff",
     Equip: "Hand",
+    class: ["Mage", "Cleric"],
     attack: 2,
     defence: 2,
     health: 10,
     magic: 20
   },
   {
+    name: "Long Stick",
+    Equip: "Hand",
+    class: ["Mage", "Cleric"],
+    attack: 1,
+    defence: 1,
+    health: 10,
+    magic: 10
+  },
+  {
+    name: "Holy Branch",
+    Equip: "Hand",
+    class: ["Mage", "Cleric"],
+    attack: 5,
+    defence: 5,
+    health: 15,
+    magic: 30
+  },
+  {
+    name: "Wand",
+    Equip: "Hand",
+    class: ["Mage", "Cleric"],
+    attack: 5,
+    defence: 5,
+    health: 15,
+    magic: 40
+  },
+  {
+    name: "Death Wand",
+    Equip: "Hand",
+    class: ["Mage", "Cleric"],
+    attack: 5,
+    defence: 5,
+    health: -20,
+    magic: 60
+  },
+  {
+    name: "Holy Book",
+    Equip: "Hand",
+    class: ["Mage", "Cleric"],
+    attack: 2,
+    defence: 10,
+    health: 20,
+    magic: 50
+  },
+  {
+    name: "Apprentice's Notes",
+    Equip: "Hand",
+    class: ["Mage", "Cleric"],
+    attack: 0,
+    defence: 0,
+    health: 10,
+    magic: 10
+  },
+  {
+    name: "God Book",
+    Equip: "Hand",
+    class: ["Mage", "Cleric"],
+    attack: 20,
+    defence: 20,
+    health: 30,
+    magic: 50
+  },
+  {
     name: "Bow",
     Equip: "Hand",
+    class: "Archer",
     attack: 10,
     defence: 0,
     health: 20,
     magic: 0
   },
   {
+    name: "Enhanced Bow",
+    Equip: "Hand",
+    class: "Archer",
+    attack: 20,
+    defence: 5,
+    health: 25,
+    magic: 0
+  },
+  {
+    name: "Ultimate Bow",
+    Equip: "Hand",
+    class: "Archer",
+    attack: 60,
+    defence: 10,
+    health: 30,
+    magic: 0
+  },
+  {
+    name: "CrossBow",
+    Equip: "Hand",
+    class: "Archer",
+    attack: 30,
+    defence: 10,
+    health: 20,
+    magic: 0
+  },
+  {
+    name: "Dragon CrossBow",
+    Equip: "Hand",
+    class: "Archer",
+    attack: 45,
+    defence: 10,
+    health: 30,
+    magic: 0
+  },
+  {
     name: "Blessed Sword",
     Equip: "Hand",
+    class: ["warrior", "Tank"],
+    attack: 25,
+    defence: 25,
+    health: 20,
+    magic: 25
+  },
+  {
+    name: "Iron Sword",
+    Equip: "Hand",
+    class: ["warrior", "Tank"],
     attack: 5,
     defence: 5,
     health: 20,
     magic: 5
   },
   {
-    name: "Dual Axes",
+    name: "Steel Sword",
     Equip: "Hand",
+    class: ["warrior", "Tank"],
+    attack: 10,
+    defence: 10,
+    health: 20,
+    magic: 0
+  },
+  {
+    name: "Golden Sword",
+    Equip: "Hand",
+    class: ["warrior", "Tank"],
+    attack: 15,
+    defence: 15,
+    health: 25,
+    magic: 0
+  },
+  {
+    name: "Diamond Sword",
+    Equip: "Hand",
+    class: ["warrior", "Tank"],
+    attack: 20,
+    defence: 20,
+    health: 30,
+    magic: 0
+  },
+  {
+    name: "Blood Crafted Sword",
+    Equip: "Hand",
+    class: ["warrior", "Tank"],
+    attack: 15,
+    defence: 15,
+    health: 20,
+    magic: 15
+  },
+  {
+    name: "Axe",
+    Equip: "Hand",
+    class: "Berserker",
     attack: 20,
     defence: 5,
     health: 10,
     magic: -5
+  },
+  {
+    name: "Large Axe",
+    Equip: "Hand",
+    class: "Berserker",
+    attack: 30,
+    defence: 5,
+    health: 15,
+    magic: -10
+  },
+  {
+    name: "God Slayer Axe",
+    Equip: "Hand",
+    class: "Berserker",
+    attack: 100,
+    defence: -5,
+    health: -20,
+    magic: -15
   },
 ];
 
@@ -208,6 +576,42 @@ const PresetFood = [
   {
     name: "Pizza",
     health: 10
+  },
+  {
+    name: "Potato",
+    health: 5
+  },
+  {
+    name: "Potato with Cheese",
+    health: 10
+  },
+  {
+    name: "Cabbage",
+    health: 1
+  },
+  {
+    name: "Chicken",
+    health: 15
+  },
+  {
+    name: "King's Meal",
+    health: 100
+  },
+  {
+    name: "Water",
+    health: 3
+  },
+  {
+    name: "Crackers",
+    health: 2
+  },
+  {
+    name: "Mud Pie",
+    health: 8
+  },
+  {
+    name: "Rock",
+    health: -2
   },
 ];
 
