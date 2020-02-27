@@ -9,5 +9,7 @@ const randomController = require("../../controllers/random");
 router
   .route("/:id")
   .get(randomController.findById)
+  .put(randomController.update)
+  
 
 module.exports = router;

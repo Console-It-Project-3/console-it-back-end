@@ -8,6 +8,8 @@ const storyController = require("../../controllers/story");
 // Matches with "/api/story/:id"
 router
   .route("/:id")
-  .get(storyController.findById);
+  .get(storyController.findById)
+  .put(storyController.update)
+  .delete(storyController.remove);
 
 module.exports = router;

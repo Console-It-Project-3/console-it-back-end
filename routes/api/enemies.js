@@ -11,5 +11,6 @@ router
   // .get(enemiesController.findAll)
   .get(enemiesController.findById)
   .put(enemiesController.update)
+  .delete(enemiesController.remove)
 
 module.exports = router;
