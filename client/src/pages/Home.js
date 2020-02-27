@@ -9,6 +9,13 @@ class Home extends Component {
         data: []
     }
 
+    // need to mount everything we are going to need to play the game,
+    // need to mount all the characters for the spesific user
+    // need to mount all of the equipment
+    // need to mount all of the enemies
+    // need to mount all of the food
+    // need to mount all of the story
+    // need to mount the random events
     componentDidMount() {
         API.getCharacters("5e56b2224a7c1f3e5004287b").then(data => {
             console.log("hit api", data);
