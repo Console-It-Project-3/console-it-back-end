@@ -15,6 +15,32 @@ export default {
         return axios.get("http://localhost:3001/api/character/all");
     },
 
+    getEnemies: function (id) {
+        console.log("api", id)
+        return axios.get("http://localhost:3001/api/enemies/" + id);
+    },
+    getEquipment: function (id) {
+        console.log("api", id)
+        return axios.get("http://localhost:3001/api/equipment/" + id);
+    },
+    getFood: function (id) {
+        console.log("api", id)
+        return axios.get("http://localhost:3001/api/food/" + id);
+    },
+    getPotion: function (id) {
+        console.log("api", id)
+        return axios.get("http://localhost:3001/api/potion/" + id);
+    },
+    getRandom: function (id) {
+        console.log("api", id)
+        return axios.get("http://localhost:3001/api/random/" + id);
+    },
+    getStory: function (id) {
+        console.log("api", id)
+        return axios.get("http://localhost:3001/api/story/" + id);
+    },
+
+
     // Gets the post with the given id
     //   getPost: function(id) {
     //     return axios.get("/api/posts/" + id);
