@@ -14,4 +14,7 @@ router
   .put(characterController.update)
   // .delete(characterController.remove);
 
+
+  router
+  .route("/all")
 module.exports = router;
