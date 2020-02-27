@@ -6,6 +6,7 @@ import Battle from "./pages/Battle";
 import Highscore from "./pages/Highscore";
 import NoMatch from "./pages/NoMatch";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Signup from './pages/SignUp';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Switch>
           <Route exact path="/" component={Home} />
             <Route exact path="/home" component={Home} />
+            <Route exact path="/signup" component={Signup} />
             <Route exact path="/character" component={Character} />
             <Route exact path="/movement" component={Movement} />
             <Route exact path="/battle" component={Battle} />

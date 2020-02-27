@@ -47,8 +47,7 @@ const userSchema = new Schema({
         ref: 'Character'
     }],
     highscore: { 
-        type: Number, 
-        required: true 
+        type: Number
     },
     terms: { 
         type: Boolean, 
@@ -64,7 +63,7 @@ const userSchema = new Schema({
     },
     blocked: { 
         type: Boolean, 
-        required: true 
+        required: false 
     },
 });
   
