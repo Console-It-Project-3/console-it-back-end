@@ -748,34 +748,42 @@ const PresetRandom = [
 ];
 
 const PresetStory = [
-  {
-    name: "story",
-    action: "to be added"
-  },
-  {
-    name: "story1",
-    action: "to be added"
-  },
-  {
-    name: "story2",
-    action: "to be added"
-  },
-  {
-    name: "story3",
-    action: "to be added"
-  },
-  {
-    name: "story4",
-    action: "to be added"
-  },
-  {
-    name: "story5",
-    action: "to be added"
-  },
-  {
-    name: "story6",
-    action: "to be added"
-  }
+ {
+   story_ID: 1,
+   text: "You awaken from you mid-morning nap at the sound of nearby screaming. 'Monsters!' the screams shout. 'Monsters are attacking the capital!'",
+   options: [
+     {
+       text: "Grab your wooden sword and shield as an aspiring Knight, even though you are just a squire",
+       storyID: 1
+     },
+     {
+      text: "Ready your homemade bow and arrows, and hope that it doesn't break",
+      storyID: 2
+      },
+    {
+      text: "Even though you much rather go back to sleep, you know that you need to practice your dagger handling skills more and and slaying a live monster is practical, and profitable",
+      storyID: 3
+    },
+    {
+      text: "Grab your staff and spellbook and user a teleport spell to the fight",
+      storyID: 4
+    },
+   ]
+ },
+ {
+  story_ID: 2,
+  text: "You arrive at the town square and people are running amok everywhere. Sounds of screams and howls bounce off the wall. You don't recognize some of the bodiies on the ground but you know that deep down more will follow unless you do something",
+  options: [
+    {
+      text: "Readying yourself and your wooden sword, you charge head first into the center of town",
+      storyID: 1
+    },
+    {
+     text: "You climb on top of one of the nearby townhouse via some vine and a pit of luck. With the high ground in your favor, you ready your bow for a fight",
+     storyID: 2
+     },
+  ]
+},
 ];
 
 db.User

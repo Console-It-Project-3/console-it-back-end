@@ -2,16 +2,14 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const storySchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  action: {
-    type: String,
-    default: "",
-    required: true
-  },
+  story_ID: Number,
+  text: String,
+  options: [
+    {
+      text: String,
+      storyID: Number
+    }
+  ]
 });
 
 const Story = mongoose.model("Story", storySchema);
