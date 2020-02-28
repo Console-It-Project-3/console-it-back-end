@@ -754,7 +754,7 @@ const PresetStory = [
    options: [
      {
        text: "Grab your wooden sword and shield as an aspiring Knight, even though you are just a squire",
-       storyID: 1
+       storyID: 2
      },
      {
       text: "Ready your homemade bow and arrows, and hope that it doesn't break",
@@ -762,11 +762,11 @@ const PresetStory = [
       },
     {
       text: "Even though you much rather go back to sleep, you know that you need to practice your dagger handling skills more and and slaying a live monster is practical, and profitable",
-      storyID: 3
+      storyID: 2
     },
     {
       text: "Grab your staff and spellbook and user a teleport spell to the fight",
-      storyID: 4
+      storyID: 2
     },
    ]
  },
@@ -776,11 +776,11 @@ const PresetStory = [
   options: [
     {
       text: "Readying yourself and your wooden sword, you charge head first into the center of town",
-      storyID: 1
+      storyID: 3
     },
     {
      text: "You climb on top of one of the nearby townhouse via some vine and a pit of luck. With the high ground in your favor, you ready your bow for a fight",
-     storyID: 2
+     storyID: 3
      },
   ]
 },
